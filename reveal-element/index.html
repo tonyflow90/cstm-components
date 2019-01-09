@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
   <title>reveal-element demo</title>
-  <script type="module" src="../reveal-element.js"></script>
+  <script type="module">
+      import "./reveal-element.js"
+  </script>
 
   <style>
     body {
@@ -19,6 +21,7 @@
 
     .centered {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
     }
@@ -29,7 +32,7 @@
   <div class="centered">
     <h3>Basic reveal-element demo</h3>
     <reveal-element scale=".6">
-      <img src="./assets/logo.png" />
+      <img src="./demo/assets/logo.png" />
     </reveal-element>
   </div>
 </body>

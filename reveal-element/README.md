@@ -1,21 +1,40 @@
 # \<reveal-element\>
 
+## Usage
 
-
-## Install the Polymer-CLI
-
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) and npm (packaged with [Node.js](https://nodejs.org)) installed. Run `npm install` to install your element's dependencies, then run `polymer serve` to serve your element locally.
-
-## Viewing Your Element
-
+### Installation
 ```
-$ polymer serve
+npm install --save @polymer/paper-card
 ```
 
-## Running Tests
-
+### In an html file
+```html
+<html>
+    <head>
+        <script type="module">
+            import "./reveal-element/reveal-element.js"
+        </script>
+      </head>
+    <body>
+        <reveal-element scale=".6">
+            <img src="./demo/assets/logo.png" />
+        </reveal-element>
+    </body>
+</html>
 ```
-$ polymer test
+
+### Installation
+```sh
+git clone https://github.com/tonyflow90/reveal-element
+cd reveal-element
+npm install
 ```
 
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+### Running the demo locally
+```sh
+$ npm run dev
+```
+
+### Running the tests
+```sh
+```
